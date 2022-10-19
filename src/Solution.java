@@ -17,7 +17,7 @@ public class Solution {
         Map<Integer, String> map = new TreeMap<>();
 
         for (int i = 0; i < 10; i++) {
-            map.put(i + 1, "str" + i);
+            map.put(i + 1, "str" + (i+1));
         }
 
         map.forEach((k, v) -> System.out.println(k + " " + v));

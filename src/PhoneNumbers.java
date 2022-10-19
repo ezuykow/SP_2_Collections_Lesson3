@@ -3,7 +3,7 @@ import java.util.Map;
 
 public class PhoneNumbers {
 
-    private Map<String, String> map;
+    private final Map<String, String> map;
 
     public PhoneNumbers() {
         map  = new HashMap<>(20);
