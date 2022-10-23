@@ -14,10 +14,10 @@ public class Solution {
     }
 
     private static void task2_2() {
-        Map<Integer, String> map = new TreeMap<>();
+        Map<Integer, String> map = new LinkedHashMap<>();
 
-        for (int i = 0; i < 10; i++) {
-            map.put(i + 1, "str" + i);
+        for (int i = 10; i > 0; i--) {
+            map.put(i, "str" + (i));
         }
 
         map.forEach((k, v) -> System.out.println(k + " " + v));
